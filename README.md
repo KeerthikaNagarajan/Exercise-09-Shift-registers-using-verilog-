@@ -79,7 +79,8 @@ endmodule
 <img width="641" alt="siportl" src="https://user-images.githubusercontent.com/93427089/172893707-adf988b7-ef92-48d9-bb79-02a3eac5b8d8.png">
 
 ### TIMING DIGRAMS FOR SHIFT REGISTERS
-<img width="740" alt="sipow" src="https://user-images.githubusercontent.com/93427089/172893755-1b28a8aa-6eb6-4cf7-a0b5-a35fd27d9886.png">
+![sipotiming](https://user-images.githubusercontent.com/93427089/172898210-f5f67b7d-4e58-4bda-b989-356d4b74a1e6.png)
+
 
 ## Parallel Input Serial Output (PISO):
 ```
