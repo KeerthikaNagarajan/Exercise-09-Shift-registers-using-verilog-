@@ -60,23 +60,71 @@ Program for  Implementation-of Shift-registers-using-verilog-
 Developed by: Keerthika N
 RegisterNumber: 212221230049
 */
-## Serial Input Parallel Output (SIPO)
 
-### RTL LOGIC  REGISTERS   
+## Serial Input Parallel Output (SIPO):
+```
+module sipo(SI,CLK,Po);
+input SI,CLK;
+output[0:7]Po;
+reg[0:7]temp;
+always@(posedge CLK)
+begin
+temp={temp[0:6],SI};
+end
+assign Po=temp;
+endmodule
+```
+
+### RTL LOGIC  REGISTERS 
+<img width="641" alt="siportl" src="https://user-images.githubusercontent.com/93427089/172893707-adf988b7-ef92-48d9-bb79-02a3eac5b8d8.png">
 
 ### TIMING DIGRAMS FOR SHIFT REGISTERS
+<img width="740" alt="sipow" src="https://user-images.githubusercontent.com/93427089/172893755-1b28a8aa-6eb6-4cf7-a0b5-a35fd27d9886.png">
 
 ## Parallel Input Serial Output (PISO):
+```
+module piso(Clk, Parallel_In,load, Serial_Out);
+input Clk,load;
+input [3:0]Parallel_In;
+output reg Serial_Out;
+reg [3:0]tmp;
+always @(posedge Clk)
+begin
+if(load)
+tmp<=Parallel_In;
+else
+begin
+Serial_Out<=tmp[3];
+tmp<={tmp[2:0],1'b0};
+end
+end
+endmodule
+```
 
 ### RTL LOGIC  REGISTERS   
+<img width="511" alt="pisortl" src="https://user-images.githubusercontent.com/93427089/172893791-5a098637-e28d-4cfb-ae80-d8a2bdf36273.png">
 
 ### TIMING DIGRAMS FOR SHIFT REGISTERS
+<img width="843" alt="pisow" src="https://user-images.githubusercontent.com/93427089/172893844-f76d572e-b0b3-4956-8f4e-c8c46af94afe.png">
 
 ## Parallel Input Parallel Output (PIPO):
+```
+module pipo(PIn,CLK,Po);
+input CLK;
+input[3:0]PIn;
+output reg[3:0]Po;
+always@(posedge CLK)
+begin
+Po=PIn;
+end
+endmodule
+```
 
 ### RTL LOGIC  REGISTERS   
+<img width="734" alt="pipo rtl" src="https://user-images.githubusercontent.com/93427089/172893876-e16c025e-3f9f-47e7-98fc-55147736d83f.png">
 
 ### TIMING DIGRAMS FOR SHIFT REGISTERS
+<img width="932" alt="pipo wave" src="https://user-images.githubusercontent.com/93427089/172893905-39c28b1b-b7f4-4ae5-9648-e00200011255.png">
 
 ### RESULTS 
 Thus, PISO , PIPO, SIPO are implemented using verilog and their functionality using their functional tables is validated.
