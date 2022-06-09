@@ -2,7 +2,7 @@
 # Experiment--09-Implementation-of Shift-registers-using-verilog-
 
 ### AIM:
-To implement PISO, PIPO,PISO  using verilog and validating their functionality using their functional tables
+To implement PISO , PIPO, SIPO using verilog and validating their functionality using their functional tables
 
 ### HARDWARE REQUIRED:   
 PC, Cyclone II , USB flasher
@@ -60,22 +60,24 @@ Program for  Implementation-of Shift-registers-using-verilog-
 Developed by: Keerthika N
 RegisterNumber: 212221230049
 */
-## PISO:-
+## Serial Input Parallel Output (SIPO)
 
 ### RTL LOGIC  REGISTERS   
 
 ### TIMING DIGRAMS FOR SHIFT REGISTERS
 
-## PIPO:-
+## Parallel Input Serial Output (PISO):
 
 ### RTL LOGIC  REGISTERS   
 
 ### TIMING DIGRAMS FOR SHIFT REGISTERS
 
-## PISO:-
+## Parallel Input Parallel Output (PIPO):
 
 ### RTL LOGIC  REGISTERS   
 
 ### TIMING DIGRAMS FOR SHIFT REGISTERS
 
 ### RESULTS 
+Thus, PISO , PIPO, SIPO are implemented using verilog and their functionality using their functional tables is validated.
+
