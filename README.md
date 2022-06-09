@@ -47,14 +47,20 @@ The logic circuit given below shows a parallel-in-parallel-out shift register. T
 FIGURE-04
 A Parallel in Parallel out (PIPO) shift register is used as a temporary storage device and like SISO Shift register it acts as a delay element.
 
-### Procedure
+### Procedure:
+```
 1.Use quartus software and import required modules.
-2.Assign inputs and outputs for shift registers.
-3.Assign logic for input to give output at positive edge.
-4.Perform opertaions and produce rtl circuit.
-5.End module
 
-### PROGRAM 
+2.Assign inputs and outputs for shift registers.
+
+3.Assign logic for input to give output at positive edge.
+
+4.Perform opertaions and produce rtl circuit.
+
+5.End module
+```
+
+### PROGRAM:
 ```
 Program for  Implementation-of Shift-registers-using-verilog-
 Developed by: Keerthika N
@@ -75,10 +81,10 @@ assign Po=temp;
 endmodule
 ```
 
-### RTL LOGIC  REGISTERS 
+### RTL LOGIC  REGISTERS:
 <img width="641" alt="siportl" src="https://user-images.githubusercontent.com/93427089/172893707-adf988b7-ef92-48d9-bb79-02a3eac5b8d8.png">
 
-### TIMING DIGRAMS FOR SHIFT REGISTERS
+### TIMING DIGRAMS FOR SHIFT REGISTERS:
 ![sipotiming](https://user-images.githubusercontent.com/93427089/172898210-f5f67b7d-4e58-4bda-b989-356d4b74a1e6.png)
 
 
@@ -102,10 +108,10 @@ end
 endmodule
 ```
 
-### RTL LOGIC  REGISTERS   
+### RTL LOGIC  REGISTERS:  
 <img width="511" alt="pisortl" src="https://user-images.githubusercontent.com/93427089/172893791-5a098637-e28d-4cfb-ae80-d8a2bdf36273.png">
 
-### TIMING DIGRAMS FOR SHIFT REGISTERS
+### TIMING DIGRAMS FOR SHIFT REGISTERS:
 <img width="843" alt="pisow" src="https://user-images.githubusercontent.com/93427089/172893844-f76d572e-b0b3-4956-8f4e-c8c46af94afe.png">
 
 ## Parallel Input Parallel Output (PIPO):
@@ -121,12 +127,12 @@ end
 endmodule
 ```
 
-### RTL LOGIC  REGISTERS   
+### RTL LOGIC  REGISTERS:
 <img width="734" alt="pipo rtl" src="https://user-images.githubusercontent.com/93427089/172893876-e16c025e-3f9f-47e7-98fc-55147736d83f.png">
 
-### TIMING DIGRAMS FOR SHIFT REGISTERS
+### TIMING DIGRAMS FOR SHIFT REGISTERS:
 <img width="932" alt="pipo wave" src="https://user-images.githubusercontent.com/93427089/172893905-39c28b1b-b7f4-4ae5-9648-e00200011255.png">
 
-### RESULTS 
+### RESULTS:
 Thus, PISO , PIPO, SIPO are implemented using verilog and their functionality using their functional tables is validated.
 
